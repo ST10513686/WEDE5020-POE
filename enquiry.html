@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry | DriveHub Motors</title>
+    <meta name="description" content="Enquire about pricing, financing, trade-ins or test drives at DriveHub Motors in Braamfontein. Get an instant response and book your test drive.">
+    <meta name="keywords" content="vehicle enquiry Johannesburg, car financing quote, trade-in valuation, book a test drive">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#245264">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; connect-src 'self' https://jsonplaceholder.typicode.com; form-action 'self' https://jsonplaceholder.typicode.com; base-uri 'self'; object-src 'none'">
+    <link rel="canonical" href="https://www.drivehubmotors.co.za/enquiry.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="DriveHub Motors">
+    <meta property="og:title" content="Enquiry | DriveHub Motors">
+    <meta property="og:description" content="Enquire about pricing, financing, trade-ins or test drives at DriveHub Motors in Braamfontein. Get an instant response and book your test drive.">
+    <meta property="og:url" content="https://www.drivehubmotors.co.za/enquiry.html">
+    <meta property="og:image" content="https://www.drivehubmotors.co.za/IMAGE/drivehub-motors-showroom-hero.png">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="IMAGE/drivehub-motors-logo.png" width="160" height="136" alt="DriveHub Motors logo">
+        </a>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="products-and-services.html">Products and Services</a> |
+            <a href="gallery.html">Gallery</a> |
+            <a href="news.html">News and Updates</a> |
+            <a href="enquiry.html" aria-current="page">Enquiry</a> |
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Vehicle Enquiry</h1>
+        <p>Tell us what you are looking for and we will respond with pricing, financing, trade-in or test-drive information. For a general message, use our <a href="contact.html">contact page</a>.</p>
+
+        <section>
+            <h2>Make an Enquiry</h2>
+            <form id="enquiry-form" action="https://jsonplaceholder.typicode.com/posts" method="post" novalidate>
+                <p>
+                    <label for="enq-name">Full Name:</label><br>
+                    <input type="text" id="enq-name" name="name" maxlength="60" autocomplete="name">
+                </p>
+                <p>
+                    <label for="enq-email">Email Address:</label><br>
+                    <input type="email" id="enq-email" name="email" maxlength="100" autocomplete="email">
+                </p>
+                <p>
+                    <label for="enq-phone">Phone Number (optional):</label><br>
+                    <input type="tel" id="enq-phone" name="phone" maxlength="20" autocomplete="tel" placeholder="e.g. 071 234 5678">
+                </p>
+                <p>
+                    <label for="enq-category">Vehicle Category:</label><br>
+                    <select id="enq-category" name="category">
+                        <option value="">-- Select a category --</option>
+                        <option value="SUV">SUVs and Off-Roaders</option>
+                        <option value="Sports and Performance">Sports and Performance</option>
+                        <option value="Family and Premium">Family and Premium</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="enq-type">Enquiry Type:</label><br>
+                    <select id="enq-type" name="type">
+                        <option value="">-- Select an enquiry type --</option>
+                        <option value="purchase">Pricing and availability</option>
+                        <option value="financing">Financing</option>
+                        <option value="tradein">Trade-in valuation</option>
+                        <option value="testdrive">Book a test drive</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="enq-date">Preferred Date (required for test drives):</label><br>
+                    <input type="date" id="enq-date" name="date">
+                </p>
+                <p>
+                    <label for="enq-message">Additional Details (optional):</label><br>
+                    <textarea id="enq-message" name="message" rows="4" cols="40" maxlength="500"></textarea>
+                </p>
+                <button type="submit">Submit Enquiry</button>
+                <p class="form-status" role="status"></p>
+            </form>
+            <div id="enquiry-response" class="enquiry-response" role="status" aria-live="polite" hidden></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; ST10513686 #Instrumental Hub</p>
+    </footer>
+<script src="JAVASCRIPT/script.js"></script>
+</body>
+</html>

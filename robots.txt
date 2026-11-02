@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /DOCUMENT/
+
+Sitemap: https://www.drivehubmotors.co.za/sitemap.xml

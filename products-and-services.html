@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products and Services | DriveHub Motors</title>
+    <meta name="description" content="Explore DriveHub Motors' hand-picked SUVs, performance cars, and premium vehicles, sourced through trusted partners like Pharoah Auto Investments.">
+    <meta name="keywords" content="SUVs Johannesburg, sports cars Braamfontein, family vehicles, car financing, trade-in, test drive">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#245264">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; connect-src 'self' https://jsonplaceholder.typicode.com; form-action 'self' https://jsonplaceholder.typicode.com; base-uri 'self'; object-src 'none'">
+    <link rel="canonical" href="https://www.drivehubmotors.co.za/products-and-services.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="DriveHub Motors">
+    <meta property="og:title" content="Products and Services | DriveHub Motors">
+    <meta property="og:description" content="Explore DriveHub Motors' hand-picked SUVs, performance cars, and premium vehicles, sourced through trusted partners like Pharoah Auto Investments.">
+    <meta property="og:url" content="https://www.drivehubmotors.co.za/products-and-services.html">
+    <meta property="og:image" content="https://www.drivehubmotors.co.za/IMAGE/drivehub-motors-showroom-hero.png">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="IMAGE/drivehub-motors-logo.png" width="160" height="136" alt="DriveHub Motors logo">
+        </a>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="products-and-services.html" aria-current="page">Products and Services</a> |
+            <a href="gallery.html">Gallery</a> |
+            <a href="news.html">News and Updates</a> |
+            <a href="enquiry.html">Enquiry</a> |
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Our Vehicles and Services</h1>
+
+        <section>
+            <h2>Browse Our Range</h2>
+            <div class="filter-bar" role="group" aria-label="Filter vehicles by category">
+                <button type="button" class="filter-btn active" data-filter="all">All</button>
+                <button type="button" class="filter-btn" data-filter="suv">SUVs and Off-Roaders</button>
+                <button type="button" class="filter-btn" data-filter="sports">Sports and Performance</button>
+                <button type="button" class="filter-btn" data-filter="family">Family and Premium</button>
+            </div>
+            <div class="vehicle-controls">
+                <div>
+                    <label for="vehicle-search">Search vehicles:</label><br>
+                    <input type="search" id="vehicle-search" name="vehicle-search" placeholder="e.g. BMW, G63, SUV" autocomplete="off">
+                </div>
+                <div>
+                    <label for="vehicle-sort">Sort by:</label><br>
+                    <select id="vehicle-sort" name="vehicle-sort">
+                        <option value="name-asc">Name (A &ndash; Z)</option>
+                        <option value="name-desc">Name (Z &ndash; A)</option>
+                        <option value="category">Category</option>
+                    </select>
+                </div>
+            </div>
+            <p id="filter-description"></p>
+            <p id="vehicle-count" class="vehicle-count" role="status" aria-live="polite"></p>
+            <div id="vehicle-list" class="vehicle-grid"></div>
+        </section>
+
+        <section>
+            <h2>Our Services</h2>
+            <ul>
+                <li>Financing and trade-in assistance</li>
+                <li>Free test drives</li>
+                <li>Scheduled maintenance and service plans</li>
+                <li>Extended warranty options</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Ready to Enquire?</h2>
+            <p>Ask about pricing, financing, trade-in values or book a test drive on our <a href="enquiry.html">enquiry page</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; ST10513686 #Instrumental Hub</p>
+    </footer>
+<script src="JAVASCRIPT/script.js"></script>
+</body>
+</html>
